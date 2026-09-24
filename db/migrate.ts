@@ -1,18 +1,17 @@
-import { readFile } from "node:fs/promises";
-import { Client } from "pg";
+import { readFile, mkdir } from "node:fs/promises";
+import Database from "better-sqlite3";
 
-const url = process.env.DATABASE_URL;
-if (!url) {
-  throw new Error("DATABASE_URL is not set. Copy .env.example to .env.local and configure Neon.");
+const path = process.env.DATABASE_URL ?? "data/app.db";
+const dir = path.slice(0, path.lastIndexOf("/"));
+if (dir) {
+  await mkdir(dir, { recursive: true });
 }
 
-const client = new Client({ connectionString: url });
-
+const db = new Database(path);
 try {
-  await client.connect();
   const sql = await readFile(new URL("./schema.sql", import.meta.url), "utf-8");
-  await client.query(sql);
-  console.log("Schema applied.");
+  db.exec(sql);
+  console.log(`Schema applied to ${path}.`);
 } finally {
-  await client.end();
+  db.close();
 }

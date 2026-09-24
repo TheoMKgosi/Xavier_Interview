@@ -1,0 +1,151 @@
+loan_id,borrower_id,first_name,last_name,phone,id_last4,branch,loan_officer,product,disbursed_on,principal_bwp,term_months,monthly_instalment_bwp,instalments_paid,arrears_bwp,penalties_bwp,outstanding_balance_bwp,next_due_date,days_overdue,status,payment_holiday_used
+KM-L-0001,KB-10001,Amantle,Modise,+267 71 084 258,4216,Gaborone Main Mall,Mmoloki Sebina,Small Business Loan,2025-12-20,"23,000.00",15,"1,993.33",6,"5,979.99",299.00,"18,238.97",2026-07-10,82,In arrears,No
+KM-L-0002,KB-10002,Tumelo,Rakgomo,+267 71 699 280,1598,Francistown,Olebile Moatlhodi,Salary Advance,2026-09-02,"1,000.00",6,191.67,0,191.67,0.00,"1,150.02",2026-09-25,5,In arrears,No
+KM-L-0003,KB-10003,Obakeng,Ramokate,+267 76 720 601,4004,Francistown,Olebile Moatlhodi,Salary Advance,2026-06-06,"4,500.00",7,755.36,4,0.00,0.00,"2,266.08",2026-10-25,0,Current,No
+KM-L-0004,KB-10004,Refilwe,Modise,+267 75 732 741,5420,Tlokweng,Bame Mokone,School Fees Loan,2026-07-15,"3,000.00",4,802.50,2,0.00,0.00,"1,605.00",2026-10-15,0,Current,No
+KM-L-0005,KB-10005,Tebogo,Rakgomo,+267 75 111 444,8093,Francistown,Olebile Moatlhodi,Salary Advance,2026-02-04,"6,500.00",10,812.50,8,0.00,0.00,"1,625.00",2026-10-25,0,Current,No
+KM-L-0006,KB-10006,Boitumelo,Mabote,+267 77 886 297,3566,Francistown,Olebile Moatlhodi,Small Business Loan,2025-12-20,"59,500.00",10,"7,140.00",9,0.00,0.00,"7,140.00",2026-10-10,0,Current,No
+KM-L-0007,KB-10007,Neo,Mokgethi,+267 71 555 204,4821,Gaborone Main Mall,Mmoloki Sebina,Salary Advance,2026-07-04,"10,000.00",8,"1,500.00",3,0.00,0.00,"7,500.00",2026-10-25,0,Current,No
+KM-L-0008,KB-10008,Phenyo,Mogapi,+267 72 339 424,8049,Gaborone Main Mall,Tshiamo Ntsima,Salary Advance,2026-05-23,"1,500.00",5,337.50,3,337.50,0.00,675.00,2026-09-25,5,In arrears,No
+KM-L-0009,KB-10009,Mmaserame,Kgathi,+267 74 094 117,9627,Gaborone Main Mall,Mmoloki Sebina,School Fees Loan,2026-01-15,"17,500.00",9,"2,250.69",8,0.00,0.00,"2,250.69",2026-10-15,0,Current,No
+KM-L-0010,KB-10010,Bakang,Kelaotswe,+267 74 014 458,8102,Francistown,Olebile Moatlhodi,School Fees Loan,2026-07-25,"23,000.00",4,"6,152.50",2,0.00,0.00,"12,305.00",2026-10-15,0,Current,No
+KM-L-0011,KB-10011,Sethunya,Letsholo,+267 71 579 600,7063,Gaborone Main Mall,Tshiamo Ntsima,Salary Advance,2026-03-29,"14,500.00",10,"1,812.50",6,0.00,0.00,"7,250.00",2026-10-25,0,Current,No
+KM-L-0012,KB-10012,Kagiso,Mogapi,26777720011,1109,Mogoditshane,Lorato Keakile,Salary Advance,2025-12-22,"15,500.00",11,"1,796.59",9,0.00,0.00,"3,593.18",2026-10-25,0,Current,No
+KM-L-0013,KB-10013,Wame,Matlhare,+267 72 657 342,8732,Mogoditshane,Lorato Keakile,Salary Advance,2026-08-27,"12,500.00",9,"1,701.39",1,0.00,0.00,"13,611.12",2026-10-25,0,Current,No
+KM-L-0014,KB-10014,Olorato,Kelaotswe,+267 73 409 780,0510,Gaborone Main Mall,Tshiamo Ntsima,Small Business Loan,2026-04-13,"19,500.00",10,"2,340.00",5,0.00,0.00,"11,700.00",2026-10-10,0,Current,No
+KM-L-0015,KB-10015,Amantle,Letsholo,+267 74 993 327,4027,Tlokweng,Bame Mokone,School Fees Loan,2026-07-14,"18,000.00",7,"2,886.43",2,0.00,0.00,"14,432.15",2026-10-15,0,Current,No
+KM-L-0016,KB-10016,Keabetswe,Nkwe,+267 71 216 301,3829,Francistown,Olebile Moatlhodi,Salary Advance,2026-07-28,"1,000.00",4,275.00,0,550.00,13.75,"1,113.75",2026-08-25,36,In arrears,No
+KM-L-0017,KB-10017,Tlotlo,Molefe,+267 71 121 574,6168,Mogoditshane,Lorato Keakile,Salary Advance,2026-06-07,"12,500.00",5,"2,812.50",4,0.00,0.00,"2,812.50",2026-10-25,0,Current,No
+KM-L-0018,KB-10018,Tsholofelo,Morake,76914049,7106,Tlokweng,Bame Mokone,Salary Advance,2026-08-27,"17,500.00",6,"3,354.17",1,0.00,0.00,"16,770.85",2026-10-25,0,Current,No
+KM-L-0019,KB-10019,Tebogo,Kebonang,+267 72 318 846,3307,Mogoditshane,Lorato Keakile,Salary Advance,2026-06-21,"3,600.00",4,990.00,2,990.00,0.00,"1,980.00",2026-09-25,5,In arrears,No
+KM-L-0020,KB-10020,Lorato,Tau,+267 72 701 549,6782,Gaborone Main Mall,Mmoloki Sebina,School Fees Loan,2026-07-22,"15,500.00",8,"2,208.75",2,0.00,0.00,"13,252.50",2026-10-15,0,Restructured,Yes
+KM-L-0021,KB-10021,Lesego,Oagile,+267 77 899 294,8162,Francistown,Olebile Moatlhodi,Salary Advance,2026-08-26,"4,500.00",4,"1,237.50",1,0.00,0.00,"3,712.50",2026-10-25,0,Current,No
+KM-L-0022,KB-10022,Tsholofelo,Dikgang,26772002324,7351,Tlokweng,Bame Mokone,School Fees Loan,2026-07-25,"28,500.00",4,"7,623.75",2,0.00,0.00,"15,247.50",2026-10-15,0,Current,No
+KM-L-0023,KB-10023,Boitumelo,Setlhare,+267 74 747 895,1246,Tlokweng,Bame Mokone,School Fees Loan,2026-07-26,"26,500.00",9,"3,408.19",2,0.00,0.00,"23,857.33",2026-10-15,0,Current,No
+KM-L-0024,KB-10024,Kealeboga,Ntshole,+267 73 768 749,8849,Mogoditshane,Lorato Keakile,Small Business Loan,2026-04-13,"15,000.00",6,"2,800.00",5,0.00,0.00,"2,800.00",2026-10-10,0,Current,No
+KM-L-0025,KB-10025,Kabelo,Rakgomo,+267 73 978 686,1263,Gaborone Main Mall,Tshiamo Ntsima,School Fees Loan,2026-08-14,"12,000.00",12,"1,210.00",0,"1,210.00",60.50,"14,580.50",2026-09-15,15,In arrears,No
+KM-L-0026,KB-10026,Ontiretse,Lekoko,+267 75 568 403,6317,Gaborone Main Mall,Tshiamo Ntsima,Salary Advance,2026-06-03,"11,500.00",6,"2,204.17",4,0.00,0.00,"4,408.34",2026-10-25,0,Current,No
+KM-L-0027,KB-10027,Tshepo,Oagile,+267 74 287 321,2264,Gaborone Main Mall,Tshiamo Ntsima,School Fees Loan,2026-07-24,"2,500.00",4,668.75,2,0.00,0.00,"1,337.50",2026-10-15,0,Current,No
+KM-L-0028,KB-10028,Boitumelo,Dintwe,+267 74 902 115,6152,Tlokweng,Bame Mokone,Small Business Loan,2026-05-13,"10,000.00",10,"1,200.00",4,0.00,0.00,"7,200.00",2026-10-10,0,Current,No
+KM-L-0029,KB-10029,Onalenna,Ntshole,+267 71 338 031,2284,Tlokweng,Bame Mokone,School Fees Loan,2026-07-27,"18,500.00",5,"4,023.75",2,0.00,0.00,"12,071.25",2026-10-15,0,Current,No
+KM-L-0030,KB-10030,Kagiso,Seleka,+267 71 618 037,2360,Gaborone Main Mall,Mmoloki Sebina,Small Business Loan,2024-12-15,"5,000.00",22,327.27,21,0.00,0.00,327.27,2026-10-10,0,Restructured,Yes
+KM-L-0031,KB-10031,Seabelo,Oagile,+267 71 799 057,6306,Mogoditshane,Lorato Keakile,Salary Advance,2026-09-01,"6,000.00",7,"1,007.14",1,0.00,0.00,"6,042.84",2026-10-25,0,Current,No
+KM-L-0032,KB-10032,Naledi,Sechele,+267 71 240 562,2536,Francistown,Olebile Moatlhodi,Salary Advance,2026-07-29,"17,000.00",12,"1,841.67",0,"3,683.34",92.08,"22,192.12",2026-08-25,36,In arrears,No
+KM-L-0033,KB-10033,Resego,Baitshepi,26776979980,2584,Gaborone Main Mall,Tshiamo Ntsima,Salary Advance,2026-08-26,"8,000.00",7,"1,342.86",0,"1,342.86",0.00,"9,400.02",2026-09-25,5,In arrears,No
+KM-L-0034,KB-10034,Tsholofelo,Tau,+267 75 547 936,8744,Mogoditshane,Lorato Keakile,Salary Advance,2026-07-06,"3,000.00",7,503.57,1,"1,007.14",25.18,"3,046.60",2026-08-25,36,In arrears,No
+KM-L-0035,KB-10035,Tlotlo,Dikgang,+267 75 474 283,0879,Francistown,Olebile Moatlhodi,Salary Advance,2026-01-31,"1,500.00",11,173.86,8,0.00,0.00,521.58,2026-10-25,0,Current,No
+KM-L-0036,KB-10036,Kagiso,Pule,+267 76 120 938,2290,Gaborone Main Mall,Tshiamo Ntsima,School Fees Loan,2026-07-18,"6,000.00",6,"1,105.00",2,0.00,0.00,"4,420.00",2026-10-15,0,Current,No
+KM-L-0037,KB-10037,Resego,Nthebolang,26774620969,6812,Mogoditshane,Lorato Keakile,Salary Advance,2026-05-24,"20,000.00",5,"4,500.00",4,0.00,0.00,"4,500.00",2026-10-25,0,Current,No
+KM-L-0038,KB-10038,Itumeleng,Rakgomo,+267 74 419 523,6322,Tlokweng,Bame Mokone,Salary Advance,2026-08-25,"3,500.00",4,962.50,1,0.00,0.00,"2,887.50",2026-10-25,0,Current,No
+KM-L-0039,KB-10039,Katlego,Sechele,26776182292,8240,Francistown,Olebile Moatlhodi,School Fees Loan,2026-06-11,"22,500.00",11,"2,439.20",1,"4,878.40",243.92,"24,635.92",2026-08-15,46,In arrears,No
+KM-L-0040,KB-10040,Lorato,Molefe,26777751095,2846,Gaborone Main Mall,Tshiamo Ntsima,Small Business Loan,2026-06-17,"9,500.00",15,823.33,3,0.00,0.00,"9,879.96",2026-10-10,0,Restructured,Yes
+KM-L-0041,KB-10041,Refilwe,Rakgomo,+267 74 159 405,6698,Francistown,Olebile Moatlhodi,Salary Advance,2025-12-26,"16,500.00",10,"2,062.50",8,"2,062.50",0.00,"4,125.00",2026-09-25,5,In arrears,No
+KM-L-0042,KB-10042,Tshepo,Pule,26771844207,5518,Mogoditshane,Lorato Keakile,Small Business Loan,2026-04-08,"20,000.00",12,"2,066.67",3,"4,133.34",206.67,"18,806.70",2026-08-10,51,In arrears,No
+KM-L-0043,KB-10043,Keitumetse,Segokgo,72862120,3312,Gaborone Main Mall,Mmoloki Sebina,Salary Advance,2026-05-24,"8,500.00",9,"1,156.94",4,0.00,0.00,"5,784.70",2026-10-25,0,Current,No
+KM-L-0044,KB-10044,Lesego,Kgathi,+267 71 736 523,8933,Tlokweng,Bame Mokone,Salary Advance,2026-03-05,"12,000.00",12,"1,300.00",5,"2,600.00",65.00,"9,165.00",2026-08-25,36,In arrears,No
+KM-L-0045,KB-10045,Naledi,Segokgo,26777562141,1899,Gaborone Main Mall,Tshiamo Ntsima,Salary Advance,2026-07-03,"9,000.00",4,"2,475.00",0,"7,425.00",247.50,"10,147.50",2026-07-25,67,In arrears,No
+KM-L-0046,KB-10046,Keitumetse,Nthebolang,+267 71 819 801,0832,Francistown,Olebile Moatlhodi,Small Business Loan,2026-04-19,"35,000.00",22,"2,290.91",5,0.00,0.00,"38,945.47",2026-10-10,0,Current,No
+KM-L-0047,KB-10047,Itumeleng,Ntshole,+267 77 010 675,7684,Tlokweng,Bame Mokone,School Fees Loan,2026-07-25,"19,000.00",5,"4,132.50",2,0.00,0.00,"12,397.50",2026-10-15,0,Current,No
+KM-L-0048,KB-10048,Bakang,Seleka,26777111456,8879,Mogoditshane,Lorato Keakile,School Fees Loan,2025-10-18,"4,500.00",12,453.75,11,0.00,0.00,453.75,2026-10-15,0,Current,No
+KM-L-0049,KB-10049,Mompati,Oagile,26773879827,4453,Tlokweng,Bame Mokone,Salary Advance,2026-09-03,"18,000.00",4,"4,950.00",1,0.00,0.00,"14,850.00",2026-10-25,0,Current,No
+KM-L-0050,KB-10050,Amantle,Mabote,+267 75 050 999,8373,Mogoditshane,Lorato Keakile,Salary Advance,2026-08-24,"17,000.00",12,"1,841.67",1,0.00,0.00,"20,258.37",2026-10-25,0,Current,No
+KM-L-0051,KB-10051,Phenyo,Ntshole,+267 72 290 547,9724,Mogoditshane,Lorato Keakile,Salary Advance,2025-12-03,"7,500.00",12,812.50,10,0.00,0.00,"1,625.00",2026-10-25,0,Current,No
+KM-L-0052,KB-10052,Tshepo,Ntshole,+267 72 066 059,6567,Mogoditshane,Lorato Keakile,School Fees Loan,2025-12-23,"22,000.00",11,"2,385.00",9,0.00,0.00,"4,770.00",2026-10-15,0,Current,No
+KM-L-0053,KB-10053,Kabelo,Ramotswa,+267 75 331 460,8804,Gaborone Main Mall,Mmoloki Sebina,Small Business Loan,2026-01-08,"30,000.00",24,"1,850.00",8,0.00,0.00,"29,600.00",2026-10-10,0,Current,No
+KM-L-0054,KB-10054,Wame,Modise,71914611,6717,Francistown,Olebile Moatlhodi,Salary Advance,2025-11-07,"14,000.00",12,"1,516.67",11,0.00,0.00,"1,516.67",2026-10-25,0,Current,No
+KM-L-0055,KB-10055,Tsholofelo,Sechele,26775197769,4086,Tlokweng,Bame Mokone,School Fees Loan,2026-05-20,"20,500.00",12,"2,067.08",3,"2,067.08",103.35,"18,707.07",2026-09-15,15,In arrears,No
+KM-L-0056,KB-10056,Goitseone,Rapoo,+267 76 895 240,6412,Tlokweng,Bame Mokone,Salary Advance,2026-03-02,"6,000.00",9,816.67,7,0.00,0.00,"1,633.34",2026-10-25,0,Current,No
+KM-L-0057,KB-10057,Boipelo,Rapoo,+267 74 364 685,3752,Francistown,Olebile Moatlhodi,School Fees Loan,2026-08-28,"11,500.00",11,"1,246.70",1,0.00,0.00,"12,467.00",2026-10-15,0,Current,No
+KM-L-0058,KB-10058,Kgomotso,Oagile,+267 74 180 075,7990,Francistown,Olebile Moatlhodi,School Fees Loan,2026-06-26,"10,000.00",6,"1,841.67",0,"5,525.01",276.25,"11,326.27",2026-07-15,77,In arrears,No
+KM-L-0059,KB-10059,Bontle,Molefe,+267 73 617 236,8605,Francistown,Olebile Moatlhodi,Salary Advance,2026-07-26,"6,500.00",4,"1,787.50",2,0.00,0.00,"3,575.00",2026-10-25,0,Current,No
+KM-L-0060,KB-10060,Katlego,Tlhalefang,75380750,7534,Francistown,Olebile Moatlhodi,Small Business Loan,2025-09-19,"5,500.00",24,339.17,12,0.00,0.00,"4,070.04",2026-10-10,0,Current,No
+KM-L-0061,KB-10061,Sethunya,Modise,+267 75 814 939,4283,Mogoditshane,Lorato Keakile,Salary Advance,2026-07-04,"6,000.00",5,"1,350.00",0,"4,050.00",135.00,"6,885.00",2026-07-25,67,In arrears,No
+KM-L-0062,KB-10062,Tumelo,Seleka,+267 72 682 137,6921,Gaborone Main Mall,Mmoloki Sebina,Small Business Loan,2026-08-17,"35,500.00",9,"4,654.44",0,"4,654.44",232.72,"42,122.68",2026-09-10,20,In arrears,No
+KM-L-0063,KB-10063,Tlotlo,Mosweu,+267 74 914 858,5234,Francistown,Olebile Moatlhodi,Small Business Loan,2026-08-14,"9,000.00",6,"1,680.00",1,0.00,0.00,"8,400.00",2026-10-10,0,Current,No
+KM-L-0064,KB-10064,Lesego,Motsumi,+267 73 670 412,1945,Tlokweng,Bame Mokone,Salary Advance,2026-03-30,"12,800.00",10,"1,600.00",6,0.00,0.00,"6,400.00",2026-10-25,0,Current,No
+KM-L-0065,KB-10065,Onalenna,Rakgomo,72087135,5125,Mogoditshane,Lorato Keakile,Small Business Loan,2025-09-13,"30,000.00",18,"2,266.67",12,0.00,0.00,"13,600.02",2026-10-10,0,Current,No
+KM-L-0066,KB-10066,Boipelo,Mabote,+267 71 054 061,6060,Gaborone Main Mall,Tshiamo Ntsima,School Fees Loan,2026-02-15,"14,500.00",10,"1,703.75",7,0.00,0.00,"5,111.25",2026-10-15,0,Current,No
+KM-L-0067,KB-10067,Mmaserame,Lekoko,+267 71 139 652,5175,Tlokweng,Bame Mokone,Small Business Loan,2026-07-10,"17,500.00",23,"1,110.87",1,"1,110.87",55.54,"24,494.68",2026-09-10,20,In arrears,No
+KM-L-0068,KB-10068,Keabetswe,Nkwe,+267 77 355 080,8176,Mogoditshane,Lorato Keakile,School Fees Loan,2026-06-14,"4,500.00",4,"1,203.75",3,0.00,0.00,"1,203.75",2026-10-15,0,Current,No
+KM-L-0069,KB-10069,Kealeboga,Tau,26777217151,3955,Mogoditshane,Lorato Keakile,Small Business Loan,2026-04-17,"46,500.00",7,"7,572.86",5,0.00,0.00,"15,145.72",2026-10-10,0,Current,No
+KM-L-0070,KB-10070,Pako,Nthebolang,+267 73 159 650,4659,Francistown,Olebile Moatlhodi,School Fees Loan,2026-06-26,"9,500.00",4,"2,541.25",1,"5,082.50",254.12,"7,877.87",2026-08-15,46,In arrears,No
+KM-L-0071,KB-10071,Phenyo,Mabote,+267 72 609 997,7610,Mogoditshane,Lorato Keakile,Salary Advance,2026-01-23,"10,500.00",11,"1,217.05",8,0.00,0.00,"3,651.15",2026-10-25,0,Current,No
+KM-L-0072,KB-10072,Kabelo,Morake,+267 71 001 854,7388,Francistown,Olebile Moatlhodi,Salary Advance,2026-05-30,"9,000.00",8,"1,350.00",4,0.00,0.00,"5,400.00",2026-10-25,0,Current,No
+KM-L-0073,KB-10073,Dineo,Mosweu,+267 76 472 510,0706,Tlokweng,Bame Mokone,Small Business Loan,2025-09-21,"29,500.00",21,"1,994.76",12,0.00,0.00,"17,952.84",2026-10-10,0,Current,No
+KM-L-0074,KB-10074,Resego,Koosimile,+267 77 316 153,2798,Gaborone Main Mall,Tshiamo Ntsima,Small Business Loan,2026-04-11,"52,000.00",14,"4,754.29",5,0.00,0.00,"42,788.61",2026-10-10,0,Current,No
+KM-L-0075,KB-10075,Lorato,Modise,71708291,2926,Mogoditshane,Lorato Keakile,Salary Advance,2026-08-27,"19,500.00",12,"2,112.50",1,0.00,0.00,"23,237.50",2026-10-25,0,Current,No
+KM-L-0076,KB-10076,Obakeng,Gaetsewe,+267 73 529 147,4084,Francistown,Olebile Moatlhodi,School Fees Loan,2026-08-15,"8,000.00",3,"2,806.67",0,"2,806.67",140.33,"8,560.34",2026-09-15,15,In arrears,No
+KM-L-0077,KB-10077,Resego,Rapoo,+267 74 629 846,2720,Mogoditshane,Lorato Keakile,Salary Advance,2026-07-29,"6,500.00",5,"1,462.50",2,0.00,0.00,"4,387.50",2026-10-25,0,Current,No
+KM-L-0078,KB-10078,Masego,Phiri,+267 72 465 019,7036,Francistown,Olebile Moatlhodi,Salary Advance,2026-08-01,"6,000.00",6,"1,150.00",2,0.00,0.00,"4,600.00",2026-10-25,0,Current,No
+KM-L-0079,KB-10078,Masego,Phiri,+267 72 465 019,7036,Francistown,Olebile Moatlhodi,School Fees Loan,2026-08-25,"4,000.00",4,"1,070.00",1,0.00,0.00,"3,210.00",2026-10-15,0,Current,No
+KM-L-0080,KB-10079,Kabelo,Mogapi,+267 75 636 741,4351,Francistown,Olebile Moatlhodi,Salary Advance,2026-02-25,"13,500.00",12,"1,462.50",6,"1,462.50",0.00,"8,775.00",2026-09-25,5,In arrears,No
+KM-L-0081,KB-10080,Olorato,Rapoo,+267 77 418 322,0814,Francistown,Olebile Moatlhodi,Small Business Loan,2025-06-19,"29,500.00",17,"2,325.29",15,0.00,0.00,"4,650.58",2026-10-10,0,Current,No
+KM-L-0082,KB-10081,Neo,Baitshepi,+267 74 847 859,2915,Gaborone Main Mall,Mmoloki Sebina,School Fees Loan,2025-11-17,"8,000.00",11,867.27,7,"2,601.81",130.09,"3,599.17",2026-07-15,77,In arrears,No
+KM-L-0083,KB-10082,Onalenna,Dikgang,+267 74 743 388,4252,Mogoditshane,Lorato Keakile,Small Business Loan,2026-04-22,"27,000.00",9,"3,540.00",5,0.00,0.00,"14,160.00",2026-10-10,0,Current,No
+KM-L-0084,KB-10083,Boitumelo,Baitshepi,+267 72 279 384,2575,Mogoditshane,Lorato Keakile,Small Business Loan,2025-12-17,"33,000.00",16,"2,722.50",9,0.00,0.00,"19,057.50",2026-10-10,0,Current,No
+KM-L-0085,KB-10084,Onalenna,Setlhare,+267 76 669 690,8353,Francistown,Olebile Moatlhodi,Salary Advance,2026-07-30,"16,500.00",3,"5,912.50",2,0.00,0.00,"5,912.50",2026-10-25,0,Current,No
+KM-L-0086,KB-10085,Amantle,Nthebolang,+267 73 570 861,6043,Gaborone Main Mall,Tshiamo Ntsima,Salary Advance,2026-08-31,"15,500.00",5,"3,487.50",0,"3,487.50",0.00,"17,437.50",2026-09-25,5,In arrears,No
+KM-L-0087,KB-10086,Onalenna,Sebego,77208351,4460,Francistown,Olebile Moatlhodi,School Fees Loan,2026-06-12,"8,000.00",8,"1,140.00",2,"1,140.00",57.00,"6,897.00",2026-09-15,15,In arrears,No
+KM-L-0088,KB-10087,Keitumetse,Nkwe,+267 72 805 229,2373,Mogoditshane,Lorato Keakile,School Fees Loan,2026-05-26,"12,000.00",5,"2,610.00",4,0.00,0.00,"2,610.00",2026-10-15,0,Current,No
+KM-L-0089,KB-10088,Pako,Mooketsi,+267 76 119 224,5164,Francistown,Olebile Moatlhodi,Small Business Loan,2026-06-10,"31,500.00",15,"2,730.00",3,0.00,0.00,"32,760.00",2026-10-10,0,Current,No
+KM-L-0090,KB-10089,Oratile,Tlhalefang,+267 77 038 374,6296,Tlokweng,Bame Mokone,Small Business Loan,2026-07-07,"40,500.00",6,"7,560.00",2,0.00,0.00,"30,240.00",2026-10-10,0,Current,No
+KM-L-0091,KB-10090,Kitso,Letsholo,+267 74 548 927,3487,Tlokweng,Bame Mokone,Small Business Loan,2026-08-11,"13,500.00",14,"1,234.29",1,0.00,0.00,"16,045.77",2026-10-10,0,Current,No
+KM-L-0092,KB-10091,Kgomotso,Dikgang,+267 75 601 239,5117,Gaborone Main Mall,Tshiamo Ntsima,Small Business Loan,2026-08-12,"29,000.00",24,"1,788.33",1,0.00,0.00,"41,131.59",2026-10-10,0,Current,No
+KM-L-0093,KB-10092,Motheo,Baitshepi,26774119154,7927,Mogoditshane,Lorato Keakile,School Fees Loan,2026-07-17,"29,500.00",5,"6,416.25",2,0.00,0.00,"19,248.75",2026-10-15,0,Current,No
+KM-L-0094,KB-10093,Goitseone,Mooketsi,+267 77 267 611,1947,Mogoditshane,Lorato Keakile,Salary Advance,2026-04-21,"16,500.00",10,"2,062.50",2,"6,187.50",206.25,"16,706.25",2026-07-25,67,In arrears,No
+KM-L-0095,KB-10094,Kagiso,Morake,+267 75 404 796,2180,Tlokweng,Bame Mokone,Small Business Loan,2026-04-06,"14,500.00",10,"1,740.00",5,0.00,0.00,"8,700.00",2026-10-10,0,Current,No
+KM-L-0096,KB-10095,Phenyo,Maruping,26773366223,1483,Gaborone Main Mall,Tshiamo Ntsima,Salary Advance,2026-08-02,"1,500.00",4,412.50,2,0.00,0.00,825.00,2026-10-25,0,Current,No
+KM-L-0097,KB-10096,Amantle,Nkwe,+267 77 550 313,5560,Tlokweng,Bame Mokone,Small Business Loan,2026-01-22,"8,000.00",15,693.33,6,"1,386.66",69.33,"6,309.30",2026-08-10,51,In arrears,No
+KM-L-0098,KB-10097,Amantle,Setlhare,26776226622,1417,Mogoditshane,Lorato Keakile,Salary Advance,2026-07-07,"7,000.00",4,"1,925.00",3,0.00,0.00,"1,925.00",2026-10-25,0,Current,No
+KM-L-0099,KB-10098,Motheo,Dikgang,+267 71 873 526,2028,Mogoditshane,Lorato Keakile,Salary Advance,2026-07-03,"1,500.00",7,251.79,3,0.00,0.00,"1,007.16",2026-10-25,0,Current,No
+KM-L-0100,KB-10099,Amantle,Tlhalefang,+267 71 381 515,3885,Mogoditshane,Lorato Keakile,Salary Advance,2026-06-05,"2,000.00",8,300.00,4,0.00,0.00,"1,200.00",2026-10-25,0,Current,No
+KM-L-0101,KB-10100,Keabetswe,Letsholo,+267 76 559 402,2167,Mogoditshane,Lorato Keakile,School Fees Loan,2026-08-20,"8,500.00",3,"2,982.08",0,"2,982.08",149.10,"9,095.34",2026-09-15,15,In arrears,No
+KM-L-0102,KB-10101,Tlotlo,Oagile,+267 73 660 860,0409,Mogoditshane,Lorato Keakile,Small Business Loan,2026-04-14,"30,500.00",20,"2,135.00",5,0.00,0.00,"32,025.00",2026-10-10,0,Current,No
+KM-L-0103,KB-10102,Kealeboga,Morake,+267 73 997 054,0389,Gaborone Main Mall,Mmoloki Sebina,School Fees Loan,2026-07-20,"27,000.00",4,"7,222.50",2,0.00,0.00,"14,445.00",2026-10-15,0,Current,No
+KM-L-0104,KB-10103,Mompati,Mosweu,+267 77 557 692,6353,Francistown,Olebile Moatlhodi,Salary Advance,2026-06-26,"7,000.00",5,"1,575.00",3,0.00,0.00,"3,150.00",2026-10-25,0,Current,No
+KM-L-0105,KB-10104,Gaone,Rapoo,+267 74 312 794,5671,Gaborone Main Mall,Tshiamo Ntsima,Salary Advance,2026-07-31,"17,000.00",4,"4,675.00",2,0.00,0.00,"9,350.00",2026-10-25,0,Current,No
+KM-L-0106,KB-10105,Keitumetse,Modise,74323984,1068,Mogoditshane,Lorato Keakile,Small Business Loan,2026-05-16,"28,500.00",13,"2,762.31",1,"8,286.93",414.35,"33,562.07",2026-07-10,82,In arrears,No
+KM-L-0107,KB-10106,Omphile,Letsholo,+267 74 132 777,4669,Tlokweng,Bame Mokone,Salary Advance,2026-07-30,"13,500.00",4,"3,712.50",2,0.00,0.00,"7,425.00",2026-10-25,0,Current,No
+KM-L-0108,KB-10107,Mompati,Segokgo,+267 76 848 293,5278,Tlokweng,Bame Mokone,Salary Advance,2026-07-29,"7,000.00",4,"1,925.00",1,"1,925.00",0.00,"5,775.00",2026-09-25,5,In arrears,No
+KM-L-0109,KB-10108,Katlego,Mosweu,26772214033,5247,Mogoditshane,Lorato Keakile,Small Business Loan,2025-12-21,"59,000.00",16,"4,867.50",9,0.00,0.00,"34,072.50",2026-10-10,0,Current,No
+KM-L-0110,KB-10109,Lorato,Setlhare,+267 72 173 040,5534,Gaborone Main Mall,Mmoloki Sebina,School Fees Loan,2026-06-22,"18,500.00",4,"4,948.75",3,0.00,0.00,"4,948.75",2026-10-15,0,Current,No
+KM-L-0111,KB-10110,Naledi,Baitshepi,+267 73 070 237,0611,Francistown,Olebile Moatlhodi,Small Business Loan,2025-07-11,"47,500.00",18,"3,588.89",14,0.00,0.00,"14,355.56",2026-10-10,0,Current,No
+KM-L-0112,KB-10111,Onalenna,Mbaakanyi,+267 75 847 116,4165,Gaborone Main Mall,Tshiamo Ntsima,Small Business Loan,2025-09-20,"44,000.00",24,"2,713.33",12,0.00,0.00,"32,559.96",2026-10-10,0,Current,No
+KM-L-0113,KB-10112,Kealeboga,Kelaotswe,+267 75 311 609,9704,Francistown,Olebile Moatlhodi,School Fees Loan,2026-08-26,"9,500.00",3,"3,332.92",1,0.00,0.00,"6,665.84",2026-10-15,0,Current,No
+KM-L-0114,KB-10113,Seabelo,Mosweu,+267 71 271 577,8030,Francistown,Olebile Moatlhodi,Small Business Loan,2025-11-18,"32,000.00",21,"2,163.81",10,0.00,0.00,"23,801.91",2026-10-10,0,Current,No
+KM-L-0115,KB-10114,Lesego,Nkwe,+267 76 436 188,1411,Gaborone Main Mall,Tshiamo Ntsima,School Fees Loan,2026-06-24,"19,500.00",6,"3,591.25",3,0.00,0.00,"10,773.75",2026-10-15,0,Current,No
+KM-L-0116,KB-10115,Mpho,Nkwe,26775683077,2616,Gaborone Main Mall,Mmoloki Sebina,Salary Advance,2026-05-06,"14,000.00",6,"2,683.33",5,0.00,0.00,"2,683.33",2026-10-25,0,Current,No
+KM-L-0117,KB-10116,Olorato,Sechele,+267 75 765 856,0886,Tlokweng,Bame Mokone,School Fees Loan,2026-06-24,"10,000.00",8,"1,425.00",3,0.00,0.00,"7,125.00",2026-10-15,0,Current,No
+KM-L-0118,KB-10117,Kgomotso,Kelaotswe,+267 71 634 434,0868,Tlokweng,Bame Mokone,School Fees Loan,2026-01-12,"24,500.00",11,"2,656.02",8,0.00,0.00,"7,968.06",2026-10-15,0,Current,No
+KM-L-0119,KB-10118,Kealeboga,Gaetsewe,26777403137,7234,Tlokweng,Bame Mokone,School Fees Loan,2026-06-22,"13,500.00",9,"1,736.25",3,0.00,0.00,"10,417.50",2026-10-15,0,Current,No
+KM-L-0120,KB-10119,Mothusi,Baitshepi,+267 76 700 605,2167,Tlokweng,Bame Mokone,Salary Advance,2026-06-03,"5,500.00",6,"1,054.17",4,0.00,0.00,"2,108.34",2026-10-25,0,Current,No
+KM-L-0121,KB-10120,Kealeboga,Tau,+267 73 730 551,6409,Francistown,Olebile Moatlhodi,Salary Advance,2026-08-27,"13,500.00",8,"2,025.00",1,0.00,0.00,"14,175.00",2026-10-25,0,Current,No
+KM-L-0122,KB-10121,Phenyo,Modise,26774602337,0077,Tlokweng,Bame Mokone,Small Business Loan,2026-03-21,"27,000.00",11,"2,994.55",6,0.00,0.00,"14,972.75",2026-10-10,0,Current,No
+KM-L-0123,KB-10122,Pako,Sechele,26774360807,1966,Gaborone Main Mall,Mmoloki Sebina,Small Business Loan,2026-07-18,"16,000.00",6,"2,986.67",2,0.00,0.00,"11,946.68",2026-10-10,0,Current,No
+KM-L-0124,KB-10123,Kgomotso,Kgathi,+267 72 001 266,3970,Tlokweng,Bame Mokone,Salary Advance,2026-05-01,"11,500.00",8,"1,725.00",3,"3,450.00",86.25,"8,711.25",2026-08-25,36,In arrears,No
+KM-L-0125,KB-10124,Kitso,Maruping,26775431109,3756,Gaborone Main Mall,Mmoloki Sebina,Small Business Loan,2026-06-11,"21,000.00",13,"2,035.38",2,"2,035.38",101.77,"22,490.95",2026-09-10,20,In arrears,No
+KM-L-0126,KB-10125,Kabelo,Kelaotswe,+267 73 614 184,8199,Tlokweng,Bame Mokone,School Fees Loan,2026-04-25,"24,000.00",6,"4,420.00",5,0.00,0.00,"4,420.00",2026-10-15,0,Current,No
+KM-L-0127,KB-10126,Mmaserame,Tlhalefang,+267 76 495 002,6766,Francistown,Olebile Moatlhodi,Salary Advance,2026-08-31,"7,000.00",5,"1,575.00",1,0.00,0.00,"6,300.00",2026-10-25,0,Current,No
+KM-L-0128,KB-10127,Kealeboga,Tau,+267 74 117 451,3621,Francistown,Olebile Moatlhodi,Salary Advance,2026-08-07,"2,000.00",10,250.00,2,0.00,0.00,"2,000.00",2026-10-25,0,Current,No
+KM-L-0129,KB-10128,Kabelo,Seleka,+267 77 785 190,2683,Gaborone Main Mall,Mmoloki Sebina,Salary Advance,2026-07-26,"12,500.00",11,"1,448.86",2,0.00,0.00,"13,039.74",2026-10-25,0,Current,No
+KM-L-0130,KB-10129,Mompati,Baitshepi,26776440931,6711,Mogoditshane,Lorato Keakile,Salary Advance,2026-02-07,"4,500.00",9,612.50,8,0.00,0.00,612.50,2026-10-25,0,Current,No
+KM-L-0131,KB-10130,Gaone,Morake,+267 71 369 411,2612,Mogoditshane,Lorato Keakile,School Fees Loan,2026-01-16,"26,500.00",11,"2,872.84",8,0.00,0.00,"8,618.52",2026-10-15,0,Restructured,Yes
+KM-L-0132,KB-10131,Mompati,Setlhare,+267 74 595 178,3397,Mogoditshane,Lorato Keakile,Salary Advance,2026-08-05,"3,500.00",4,962.50,2,0.00,0.00,"1,925.00",2026-10-25,0,Current,No
+KM-L-0133,KB-10132,Motheo,Setlhare,26774747061,9028,Gaborone Main Mall,Tshiamo Ntsima,Small Business Loan,2026-08-20,"23,500.00",24,"1,449.17",1,0.00,0.00,"33,330.91",2026-10-10,0,Current,No
+KM-L-0134,KB-10133,Wame,Gabaake,+267 74 681 077,0790,Tlokweng,Bame Mokone,Salary Advance,2026-03-04,"2,000.00",11,231.82,7,0.00,0.00,927.28,2026-10-25,0,Current,No
+KM-L-0135,KB-10134,Gaone,Setlhare,+267 77 259 462,5333,Mogoditshane,Lorato Keakile,Small Business Loan,2026-02-16,"40,000.00",13,"3,876.92",7,0.00,0.00,"23,261.52",2026-10-10,0,Current,No
+KM-L-0136,KB-10135,Kagiso,Maruping,71113567,5885,Francistown,Olebile Moatlhodi,Salary Advance,2026-06-21,"11,000.00",6,"2,108.33",3,0.00,0.00,"6,324.99",2026-10-25,0,Current,No
+KM-L-0137,KB-10136,Mpho,Baitshepi,+267 72 284 449,2632,Gaborone Main Mall,Tshiamo Ntsima,Salary Advance,2026-06-29,"8,000.00",6,"1,533.33",3,0.00,0.00,"4,599.99",2026-10-25,0,Current,No
+KM-L-0138,KB-10137,Mpho,Nthebolang,+267 76 476 527,6277,Francistown,Olebile Moatlhodi,School Fees Loan,2026-05-13,"16,000.00",10,"1,880.00",3,"1,880.00",94.00,"13,254.00",2026-09-15,15,In arrears,No
+KM-L-0139,KB-10138,Kealeboga,Gaetsewe,73104501,9397,Francistown,Olebile Moatlhodi,Small Business Loan,2026-02-16,"55,000.00",15,"4,766.67",7,0.00,0.00,"38,133.36",2026-10-10,0,Restructured,Yes
+KM-L-0140,KB-10139,Goabaone,Seleka,+267 76 682 449,0809,Gaborone Main Mall,Mmoloki Sebina,School Fees Loan,2026-08-17,"7,500.00",5,"1,631.25",1,0.00,0.00,"6,525.00",2026-10-15,0,Current,No
+KM-L-0141,KB-10140,Lorato,Mbaakanyi,+267 72 859 218,9321,Francistown,Olebile Moatlhodi,Small Business Loan,2026-03-20,"10,000.00",14,914.29,5,914.29,45.71,"8,274.32",2026-09-10,20,In arrears,No
+KM-L-0142,KB-10141,Lorato,Letsholo,26771091985,3289,Tlokweng,Bame Mokone,Salary Advance,2026-08-29,"9,000.00",11,"1,043.18",1,0.00,0.00,"10,431.80",2026-10-25,0,Current,No
+KM-L-0143,KB-10142,Motheo,Rapoo,+267 76 935 157,9282,Mogoditshane,Lorato Keakile,School Fees Loan,2026-07-23,"5,500.00",9,707.36,2,0.00,0.00,"4,951.52",2026-10-15,0,Current,No
+KM-L-0144,KB-10143,Goabaone,Mabote,71293629,6797,Mogoditshane,Lorato Keakile,Small Business Loan,2025-11-14,"24,000.00",16,"1,980.00",10,0.00,0.00,"11,880.00",2026-10-10,0,Current,No
+KM-L-0145,KB-10144,Masego,Segokgo,+267 73 248 458,8287,Tlokweng,Bame Mokone,Small Business Loan,2026-06-13,"25,000.00",16,"2,062.50",3,0.00,0.00,"26,812.50",2026-10-10,0,Current,No
+KM-L-0146,KB-10145,Wame,Oagile,26772897814,4269,Tlokweng,Bame Mokone,Small Business Loan,2026-08-14,"21,000.00",13,"2,035.38",1,0.00,0.00,"24,424.56",2026-10-10,0,Current,No
+KM-L-0147,KB-10146,Obakeng,Koosimile,26773764531,2892,Mogoditshane,Lorato Keakile,Salary Advance,2026-05-02,"1,000.00",6,191.67,5,0.00,0.00,191.67,2026-10-25,0,Current,No
+KM-L-0148,KB-10147,Keabetswe,Morake,+267 74 325 850,8121,Tlokweng,Bame Mokone,School Fees Loan,2026-06-22,"15,000.00",8,"2,137.50",1,"4,275.00",213.75,"15,176.25",2026-08-15,46,In arrears,No
+KM-L-0149,KB-10148,Tshepo,Matlhare,+267 76 292 170,7893,Tlokweng,Bame Mokone,Salary Advance,2026-05-01,"2,000.00",9,272.22,3,544.44,13.61,"1,646.93",2026-08-25,36,In arrears,No
+KM-L-0150,KB-10149,Amantle,Segokgo,+267 73 518 012,8472,Gaborone Main Mall,Mmoloki Sebina,Salary Advance,2026-08-07,"16,500.00",9,"2,245.83",2,0.00,0.00,"15,720.81",2026-10-25,0,Current,No
