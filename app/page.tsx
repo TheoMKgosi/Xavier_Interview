@@ -10,7 +10,7 @@ export default function Home() {
             <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-600 text-sm font-black text-white">
               L
             </span>
-            LendingKind
+            Kopano Microfinance
           </Link>
           <nav className="hidden items-center gap-6 text-sm font-medium text-zinc-600 md:flex dark:text-zinc-400">
             <a href="#loans" className="hover:text-zinc-900">Loans</a>
@@ -158,7 +158,7 @@ export default function Home() {
       </main>
 
       <footer className="mx-auto max-w-6xl px-6 py-10 text-sm text-zinc-500">
-        <p>© {new Date().getFullYear()} LendingKind. Demo application.</p>
+        <p>© {new Date().getFullYear()} Kopano Microfinance. Demo application.</p>
       </footer>
 
       <ChatWidget />
