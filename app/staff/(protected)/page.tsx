@@ -6,8 +6,8 @@ export default async function StaffConversationsPage() {
 
   const initial = conversations.map((c) => ({
     ...c,
-    created_at: c.created_at.toISOString(),
-    updated_at: c.updated_at.toISOString(),
+    created_at: new Date(c.created_at).toISOString(),
+    updated_at: new Date(c.updated_at).toISOString(),
   }));
 
   return <ConversationsList initial={initial} />;

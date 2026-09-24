@@ -23,7 +23,7 @@ export default async function StaffConversationPage({
     id: m.id,
     role: m.role,
     content: m.content,
-    created_at: m.created_at.toISOString(),
+    created_at: new Date(m.created_at).toISOString(),
   }));
 
   return (
