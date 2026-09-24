@@ -1,4 +1,5 @@
-import { createHash, createHmac } from "node:crypto";
+import { readFile, readdir } from "node:fs/promises";
+import { join } from "node:path";
 
 export interface KbDocument {
   name: string;
@@ -8,139 +9,155 @@ export interface KbDocument {
 export interface KnowledgeBase {
   documents: KbDocument[];
   handoverInstructions: string | null;
-  source: "s3" | "env";
+  source: "local";
 }
 
-const EMPTY_SHA256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855";
-
-const TTL_MS = 5 * 60 * 1000;
+const KB_DIR = process.env.KB_DIR ?? "knowledge-base";
 
 let cache: { kb: KnowledgeBase; fetchedAt: number } | null = null;
 
-function sha256Hex(data: string): string {
-  return createHash("sha256").update(data).digest("hex");
-}
-
-function hmacSha256(key: Buffer | string, data: string): Buffer {
-  return createHmac("sha256", key).update(data).digest();
-}
-
-function config(): { endpoint: string; bucket: string; accessKey: string; secretKey: string; region: string; prefix: string } | null {
-  const endpoint = process.env.KB_ENDPOINT;
-  const bucket = process.env.KB_BUCKET;
-  const accessKey = process.env.KB_ACCESS_KEY;
-  const secretKey = process.env.KB_SECRET_KEY;
-  if (!endpoint || !bucket || !accessKey || !secretKey) return null;
-  return {
-    endpoint: endpoint.replace(/\/$/, ""),
-    bucket,
-    accessKey,
-    secretKey,
-    region: process.env.KB_REGION ?? "us-east-1",
-    prefix: process.env.KB_PREFIX ?? "",
-  };
-}
-
-async function s3Request(cfg: ReturnType<typeof config>, path: string, query: string): Promise<string> {
-  const url = new URL(cfg!.endpoint);
-  const host = url.host;
-  const now = new Date();
-  const amzDate = now.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
-  const dateStamp = amzDate.slice(0, 8);
-  const service = "s3";
-  const payloadHash = EMPTY_SHA256;
-
-  const canonicalHeaders = `host:${host}\nx-amz-content-sha256:${payloadHash}\nx-amz-date:${amzDate}`;
-  const signedHeaders = "host;x-amz-content-sha256;x-amz-date";
-  const canonicalRequest = `GET\n${path}\n${query}\n${canonicalHeaders}\n\n${signedHeaders}\n${payloadHash}`;
-
-  const scope = `${dateStamp}/${cfg!.region}/${service}/aws4_request`;
-  const stringToSign = `AWS4-HMAC-SHA256\n${amzDate}\n${scope}\n${sha256Hex(canonicalRequest)}`;
-
-  const kDate = hmacSha256(`AWS4${cfg!.secretKey}`, dateStamp);
-  const kRegion = hmacSha256(kDate, cfg!.region);
-  const kService = hmacSha256(kRegion, service);
-  const kSigning = hmacSha256(kService, "aws4_request");
-  const signature = hmacSha256(kSigning, stringToSign).toString("hex");
-
-  const authorization =
-    `AWS4-HMAC-SHA256 Credential=${cfg!.accessKey}/${scope}, SignedHeaders=${signedHeaders}, Signature=${signature}`;
-
-  const requestUrl = new URL(cfg!.endpoint);
-  requestUrl.pathname = path;
-  requestUrl.search = query;
-
-  const res = await fetch(requestUrl, {
-    headers: {
-      host,
-      "x-amz-content-sha256": payloadHash,
-      "x-amz-date": amzDate,
-      authorization,
-    },
-  });
-  if (!res.ok) {
-    throw new Error(`KB request failed: ${res.status} ${res.statusText} for ${path}`);
+function ensurePdfShim() {
+  if (typeof (globalThis as Record<string, unknown>).DOMMatrix !== "undefined") return;
+  class DOMMatrix {
+    private m: number[];
+    constructor(m?: number[]) {
+      this.m = m ?? [1, 0, 0, 1, 0, 0];
+    }
+    static fromString() {
+      return new DOMMatrix();
+    }
+    static fromFloat32Array() {
+      return new DOMMatrix();
+    }
+    static fromFloat64Array() {
+      return new DOMMatrix();
+    }
+    static fromMatrix() {
+      return new DOMMatrix();
+    }
+    multiply() {
+      return this;
+    }
+    translate() {
+      return this;
+    }
+    scale() {
+      return this;
+    }
+    rotate() {
+      return this;
+    }
+    inverse() {
+      return this;
+    }
+    transformPoint(p: { x?: number; y?: number }) {
+      return { x: p?.x ?? 0, y: p?.y ?? 0 };
+    }
+    get a() {
+      return this.m[0];
+    }
+    get b() {
+      return this.m[1];
+    }
+    get c() {
+      return this.m[2];
+    }
+    get d() {
+      return this.m[3];
+    }
+    get e() {
+      return this.m[4];
+    }
+    get f() {
+      return this.m[5];
+    }
   }
-  return res.text();
-}
-
-function keyPath(cfg: ReturnType<typeof config>, key: string): string {
-  return `/${cfg!.bucket}/${key.split("/").map(encodeURIComponent).join("/")}`;
-}
-
-async function listKeys(cfg: ReturnType<typeof config>): Promise<string[]> {
-  const query = new URLSearchParams({ "list-type": "2", prefix: cfg!.prefix }).toString();
-  const xml = await s3Request(cfg, `/${cfg!.bucket}`, query);
-  const keys: string[] = [];
-  for (const match of xml.matchAll(/<Key>([^<]+)<\/Key>/g)) {
-    keys.push(match[1]);
+  class DOMPoint {
+    x: number;
+    y: number;
+    constructor(x = 0, y = 0) {
+      this.x = x;
+      this.y = y;
+    }
+    static fromPoint() {
+      return new DOMPoint();
+    }
   }
-  return keys;
+  const g = globalThis as Record<string, unknown>;
+  g.DOMMatrix = DOMMatrix;
+  g.DOMPoint = DOMPoint;
+  g.DOMTransform = DOMMatrix;
 }
 
-async function getObject(cfg: ReturnType<typeof config>, key: string): Promise<string> {
-  return s3Request(cfg, keyPath(cfg, key), "");
+async function extractPdf(data: Buffer): Promise<string> {
+  ensurePdfShim();
+  const { PDFParse } = await import("pdf-parse");
+  const parser = new PDFParse({ data });
+  const result = await parser.getText();
+  const pages = result.pages as { text?: string }[] | undefined;
+  return pages ? pages.map((p) => p.text ?? "").join("\n") : "";
 }
 
-function keysFromEnv(): string[] {
-  return (process.env.KB_FILES ?? "")
-    .split(",")
-    .map((k) => k.trim())
-    .filter(Boolean);
+async function extractDocx(data: Buffer): Promise<string> {
+  const mammoth = await import("mammoth");
+  const result = await mammoth.extractRawText({ buffer: data });
+  return result.value;
+}
+
+async function extractFile(name: string): Promise<string | null> {
+  const lower = name.toLowerCase();
+  const data = await readFile(join(KB_DIR, name));
+  if (lower.endsWith(".txt") || lower.endsWith(".md")) {
+    return data.toString("utf-8");
+  }
+  if (lower.endsWith(".docx")) {
+    return extractDocx(data);
+  }
+  if (lower.endsWith(".pdf")) {
+    return extractPdf(data);
+  }
+  return null;
+}
+
+function findHandoverDoc(documents: KbDocument[]): KbDocument | null {
+  const configured = process.env.KB_HANDOVER_FILE;
+  if (configured) {
+    const match = documents.find((doc) => doc.name === configured);
+    if (match) return match;
+  }
+  const byName = documents.find((doc) => /handover|handoff|escalat/i.test(doc.name));
+  if (byName) return byName;
+  return documents.find((doc) => /transfer the conversation to a human agent/i.test(doc.content)) ?? null;
 }
 
 export async function loadKnowledgeBase(force = false): Promise<KnowledgeBase> {
-  if (!force && cache && Date.now() - cache.fetchedAt < TTL_MS) {
+  if (!force && cache) {
     return cache.kb;
   }
 
-  const cfg = config();
-  if (!cfg) {
-    const kb: KnowledgeBase = { documents: [], handoverInstructions: null, source: "env" };
-    cache = { kb, fetchedAt: Date.now() };
-    return kb;
-  }
-
-  const envKeys = keysFromEnv();
-  const keys = envKeys.length ? envKeys : await listKeys(cfg);
-
   const documents: KbDocument[] = [];
-  for (const key of keys) {
-    if (!key.endsWith(".md") && !key.endsWith(".txt")) continue;
-    try {
-      const content = await getObject(cfg, key);
-      const name = key.split("/").pop() ?? key;
-      documents.push({ name, content });
-    } catch (error) {
-      console.error(`[kb] failed to load ${key}:`, error);
+  try {
+    const entries = await readdir(KB_DIR, { withFileTypes: true });
+    for (const entry of entries) {
+      if (!entry.isFile()) continue;
+      try {
+        const content = await extractFile(entry.name);
+        if (content !== null) {
+          documents.push({ name: entry.name, content });
+        }
+      } catch (error) {
+        console.error(`[kb] failed to extract ${entry.name}:`, error);
+      }
     }
+  } catch {
+    // knowledge-base/ folder missing or unreadable — proceed with no docs
   }
 
-  const handoverDoc = documents.find((doc) => /handover|handoff/i.test(doc.name));
+  const handoverDoc = findHandoverDoc(documents);
   const kb: KnowledgeBase = {
     documents,
-    handoverInstructions: handoverDoc?.content ?? null,
-    source: "s3",
+    handoverInstructions: handoverDoc ? handoverDoc.content : null,
+    source: "local",
   };
   cache = { kb, fetchedAt: Date.now() };
   return kb;
